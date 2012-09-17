@@ -107,7 +107,7 @@ Backbone.ModalView =
                                     top: 0,
                                     left: 0,
                                     height: document.height, // Span the full document height...
-                                    width: "100%", // ...and full width
+                                    width: document.width, // ...and full width
                                     opacity: 0.5, // Make it slightly transparent
                                     backgroundColor: "#000",
                                     "z-index": 99900
@@ -121,7 +121,7 @@ Backbone.ModalView =
                     this.modalBlanket.css(
                         {
                             height: document.height, // Span the full document height...
-                            width: "100%" // ...and full width
+                            width: document.width // ...and full width
                         });
                 }
 
