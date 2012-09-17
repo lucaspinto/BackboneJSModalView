@@ -106,7 +106,7 @@ Backbone.ModalView =
                                     position: "absolute",
                                     top: 0,
                                     left: 0,
-                                    height: $(document).height(), // Span the full document height...
+                                    height: document.height, // Span the full document height...
                                     width: "100%", // ...and full width
                                     opacity: 0.5, // Make it slightly transparent
                                     backgroundColor: "#000",
@@ -120,7 +120,7 @@ Backbone.ModalView =
                     // Ensure the blanket spans the whole document, screen may have been updated.
                     this.modalBlanket.css(
                         {
-                            height: $(document).height(), // Span the full document height...
+                            height: document.height, // Span the full document height...
                             width: "100%" // ...and full width
                         });
                 }
